@@ -151,17 +151,17 @@ else
     skip_test "run --init" "no project dir"
 fi
 
-# ── Flows ────────────────────────────────────────────────
+# ── Lanes ────────────────────────────────────────────────
 
-section "Flows"
+section "Lanes"
 
 if [[ -n "$PROJECT_DIR" && -d "$PROJECT_DIR" ]]; then
     pushd "$PROJECT_DIR" >/dev/null
-    # flow list exits non-zero when no flows configured (expected in scaffolded project)
-    run_test "flow list (expected err)" bash -c "\"$FLEDGE\" flow list 2>&1; [[ \$? -le 1 ]]"
+    # lane list exits non-zero when no lanes configured (expected in scaffolded project)
+    run_test "lane list (expected err)" bash -c "\"$FLEDGE\" lane list 2>&1; [[ \$? -le 1 ]]"
     popd >/dev/null
 else
-    skip_test "flow list" "no project dir"
+    skip_test "lane list" "no project dir"
 fi
 
 # ── Git / GitHub Workflow ────────────────────────────────

@@ -16,7 +16,7 @@ fledge e2e
 
 Runs from the root of any git repo with a GitHub remote. The test harness:
 
-- Scaffolds a temporary project to test `init`, `spec`, `run`, and `flow` commands
+- Scaffolds a temporary project to test `init`, `spec`, `run`, and `lane` commands
 - Tests non-destructive commands against the current repo (issues, prs, checks, changelog, metrics, deps)
 - Skips destructive operations (work start/pr/finish, publish, plugin install/remove)
 - Skips AI-powered commands unless `ANTHROPIC_API_KEY` or `OPENAI_API_KEY` is set
