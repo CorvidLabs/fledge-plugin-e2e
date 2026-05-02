@@ -5,7 +5,7 @@ End-to-end test plugin for [fledge](https://github.com/CorvidLabs/fledge) — ex
 ## Install
 
 ```bash
-fledge plugin install CorvidLabs/fledge-plugin-e2e
+fledge plugins install CorvidLabs/fledge-plugin-e2e
 ```
 
 ## Usage
@@ -16,9 +16,10 @@ fledge e2e
 
 Runs from the root of any git repo with a GitHub remote. The test harness:
 
-- Scaffolds a temporary project to test `init`, `spec`, `run`, and `lane` commands
-- Tests non-destructive commands against the current repo (issues, prs, checks, changelog, metrics, deps)
-- Skips destructive operations (work start/pr/finish, publish, plugin install/remove)
+- Scaffolds a temporary project to test `templates init`, `spec`, `run`, and `lanes` commands
+- Tests non-destructive commands against the current repo (github issues/prs/checks, changelog, metrics, deps)
+- Gracefully skips plugin-provided commands (github, metrics, deps) when the plugin is not installed
+- Skips destructive operations (work start/commit/push, release, plugins install/remove)
 - Skips AI-powered commands unless `ANTHROPIC_API_KEY` or `OPENAI_API_KEY` is set
 
 ### Environment variables

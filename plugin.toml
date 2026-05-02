@@ -1,6 +1,6 @@
 [plugin]
 name = "fledge-e2e"
-version = "0.1.0"
+version = "1.0.0"
 description = "End-to-end test runner — exercises every fledge command and reports pass/fail status"
 author = "CorvidLabs"
 
