@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  shellcheck:
+    name: ShellCheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install ShellCheck
+        run: sudo apt-get install -y shellcheck
+
+      - name: Find and lint shell scripts
+        run: |
+          # Lint explicitly named .sh files
+          shopt -s nullglob
+          scripts=(*.sh **/*.sh)
+
+          # Also lint executable files with a bash/sh shebang
+          while IFS= read -r -d '' file; do
+            if head -1 "$file" | grep -qE '^#!.*(bash|sh)'; then
+              scripts+=("$file")
+            fi
+          done < <(find . -type f -executable -not -path './.git/*' -print0)
+
+          # Deduplicate
+          mapfile -t scripts < <(printf '%s\n' "${scripts[@]}" | sort -u)
+
+          if [[ ${#scripts[@]} -eq 0 ]]; then
+            echo "No shell scripts found"
+            exit 0
+          fi
+
+          echo "Linting ${#scripts[@]} script(s):"
+          printf '  %s\n' "${scripts[@]}"
+          shellcheck "${scripts[@]}"
