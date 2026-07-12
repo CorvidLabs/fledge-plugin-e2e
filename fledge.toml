@@ -1,0 +1,7 @@
+# fledge.toml: project task definitions
+[tasks]
+lint = "shellcheck fledge-e2e"
+
+[lanes.verify]
+description = "Statically validate the E2E harness without external repository operations"
+steps = ["lint"]
