@@ -1,0 +1,25 @@
+{
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783952602,
+      "digest": "db49eb3215e2bc81562060be121a22890d75976771f6b1ce26daad816964f9be",
+      "note": "Definition approved after complete semantic-delta modeling, truthful task preparation, and native verification review."
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783953041,
+      "digest": "9640c730150506f7a4b718c2e21e70d90ef0485887dc816d78e5c2205c99e3f5",
+      "note": "Fresh definition approval after portable verification and requirement-evidence corrections; prior approval history preserved."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783953068,
+      "digest": "30831f5dca82238a605b749f1153ccd6765b78d3c8538d9f4773663d89c15973",
+      "note": "Closing approval recorded after successful committed-head native verification with portable requirement evidence."
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+[registry]
+name = "fledge-plugin-e2e-trust-wave4"
+
+[specs]
+e2e = "specs/e2e/e2e.spec.md"
