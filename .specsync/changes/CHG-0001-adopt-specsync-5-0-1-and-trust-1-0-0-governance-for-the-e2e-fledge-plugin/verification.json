@@ -1,15 +1,18 @@
 {
-  "timestamp": 1783952614,
-  "commit": "db992a12f745a2a8aef7e637bb074fbbf9331c72",
-  "contract_digest": "db49eb3215e2bc81562060be121a22890d75976771f6b1ce26daad816964f9be",
-  "workspace_digest": "3417e645444c02c2c97b41bf8a4a9ae8787cac744cec57f6f4e30ec8c3a74e09",
-  "passed": false,
+  "timestamp": 1783953053,
+  "commit": "45fd4d86c81b26a78777478554c57e06c8ef149f",
+  "contract_digest": "9640c730150506f7a4b718c2e21e70d90ef0485887dc816d78e5c2205c99e3f5",
+  "workspace_digest": "108f9ce33ba9d036945f4e5872c2f784e654455e4a51def58ee1bcdc2c2f1c3b",
+  "acceptance_input_digest": "68fcc665ab849a0f18fd80de6df29a16ce416bcb284725252e64611f38b340dc",
+  "passed": true,
   "commands": [
     {
-      "command": "shellcheck fledge-e2e",
+      "command": "fledge lanes run verify",
       "success": true,
       "exit_code": 0
     }
   ],
-  "requirement_ids": []
+  "requirement_ids": [
+    "REQ-e2e-003"
+  ]
 }

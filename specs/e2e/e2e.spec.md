@@ -1,6 +1,6 @@
 ---
 module: e2e
-version: 1
+version: 2
 status: active
 files:
   - fledge-e2e
@@ -64,3 +64,5 @@ Then AI and metrics cases are reported as skipped while core local cases still e
 | Version | Date | Changes |
 |---------|------|---------|
 | 1 | 2026-07-12 | Document existing safe E2E harness behavior for SpecSync 5 adoption. |
+| 2 | 2026-07-13 | Reconciled existing safety documentation and stable requirement IDs for SpecSync 5.0.1 governance; runtime behavior and independently authorized external E2E execution are unchanged. |
+| 2026-07-13 | CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-the-e2e-fledge-plugin: Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for the E2E Fledge plugin |

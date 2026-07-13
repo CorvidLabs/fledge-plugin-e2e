@@ -1,6 +1,6 @@
 ---
 id: CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-the-e2e-fledge-plugin
-state: implementing
+state: accepted
 type: migration
 base_commit: 1041d91583f5ded314083db26f0c84dcf7be55be
 ---

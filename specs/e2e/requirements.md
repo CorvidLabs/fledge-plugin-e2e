@@ -20,6 +20,9 @@ The harness SHALL skip unavailable plugin and AI commands with an explicit reaso
 
 The harness SHALL never perform work commits, pushes, releases, or plugin installation/removal.
 
+Acceptance Criteria
+- Static harness verification confirms destructive operations remain excluded; full external E2E remains independently controlled and is not claimed as executed.
+
 ### REQ-e2e-004
 
 The report SHALL include per-test timing and aggregate pass, fail, and skip counts and exit non-zero when failures exist.
