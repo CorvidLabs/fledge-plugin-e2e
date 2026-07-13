@@ -10,3 +10,4 @@ artifact: testing
 - `specsync agents status`
 - `fledge trust doctor` and `fledge trust verify`
 - Full `fledge e2e` remains independently controlled
+- `REQ-e2e-003`: ShellCheck plus static harness inspection confirms destructive operations remain excluded; full external execution is not claimed.

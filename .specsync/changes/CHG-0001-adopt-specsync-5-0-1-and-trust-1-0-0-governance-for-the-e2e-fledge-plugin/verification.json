@@ -1,0 +1,15 @@
+{
+  "timestamp": 1783952614,
+  "commit": "db992a12f745a2a8aef7e637bb074fbbf9331c72",
+  "contract_digest": "db49eb3215e2bc81562060be121a22890d75976771f6b1ce26daad816964f9be",
+  "workspace_digest": "3417e645444c02c2c97b41bf8a4a9ae8787cac744cec57f6f4e30ec8c3a74e09",
+  "passed": false,
+  "commands": [
+    {
+      "command": "shellcheck fledge-e2e",
+      "success": true,
+      "exit_code": 0
+    }
+  ],
+  "requirement_ids": []
+}

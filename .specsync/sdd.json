@@ -26,14 +26,14 @@
     ".specsync/config.toml",
     ".specsync/config.json",
     ".specsync/version",
-    "."
+    "fledge-e2e"
   ],
   "ignored_paths": [
     ".specsync/",
     "specs/"
   ],
   "verification_commands": [
-    "shellcheck fledge-e2e"
+    "fledge lanes run verify"
   ],
   "custom_artifacts": {},
   "principles_file": null
