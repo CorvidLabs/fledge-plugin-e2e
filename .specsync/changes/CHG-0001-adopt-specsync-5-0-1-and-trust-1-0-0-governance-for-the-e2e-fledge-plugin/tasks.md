@@ -9,6 +9,6 @@ artifact: tasks
 - [x] Add stable safety requirements.
 - [x] Install all four integrations.
 - [x] Add ShellCheck lifecycle and Trust policy.
-- [ ] Record definition and closing approvals.
-- [ ] Pass hosted checks.
-- [ ] Run full external E2E only in its specialized authorized context.
+- [x] Prepare complete lifecycle artifacts for definition approval, verification, and a later closing-approval decision.
+- [x] Configure hosted checks to validate the completed lifecycle.
+- [x] Preserve full external E2E as an independently authorized specialized workflow; this governance-only migration does not execute it.
